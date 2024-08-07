@@ -11,6 +11,9 @@
 		8E5D53F62C5CD50200CD074F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E5D53F52C5CD50200CD074F /* ContentView.swift */; };
 		8E5D53F82C5CD50400CD074F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E5D53F72C5CD50400CD074F /* Assets.xcassets */; };
 		8E5D53FB2C5CD50400CD074F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E5D53FA2C5CD50400CD074F /* Preview Assets.xcassets */; };
+		8E5D54022C5CD5E400CD074F /* BarcodeScannerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E5D54012C5CD5E400CD074F /* BarcodeScannerViewModel.swift */; };
+		8E5D54042C5CD62300CD074F /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E5D54032C5CD62300CD074F /* CameraView.swift */; };
+		8EC3E3462C62265800D693D3 /* ScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC3E3452C62265800D693D3 /* ScannerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,9 @@
 		8E5D53F52C5CD50200CD074F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8E5D53F72C5CD50400CD074F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8E5D53FA2C5CD50400CD074F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8E5D54012C5CD5E400CD074F /* BarcodeScannerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeScannerViewModel.swift; sourceTree = "<group>"; };
+		8E5D54032C5CD62300CD074F /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		8EC3E3452C62265800D693D3 /* ScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +59,9 @@
 			children = (
 				8E5D53F32C5CD50200CD074F /* BarcodeDetectionApp.swift */,
 				8E5D53F52C5CD50200CD074F /* ContentView.swift */,
+				8EC3E3452C62265800D693D3 /* ScannerView.swift */,
+				8E5D54032C5CD62300CD074F /* CameraView.swift */,
+				8E5D54012C5CD5E400CD074F /* BarcodeScannerViewModel.swift */,
 				8E5D53F72C5CD50400CD074F /* Assets.xcassets */,
 				8E5D53F92C5CD50400CD074F /* Preview Content */,
 			);
@@ -137,8 +146,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E5D54022C5CD5E400CD074F /* BarcodeScannerViewModel.swift in Sources */,
 				8E5D53F62C5CD50200CD074F /* ContentView.swift in Sources */,
 				8E5D53F42C5CD50200CD074F /* BarcodeDetectionApp.swift in Sources */,
+				8E5D54042C5CD62300CD074F /* CameraView.swift in Sources */,
+				8EC3E3462C62265800D693D3 /* ScannerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,11 +287,13 @@
 				DEVELOPMENT_TEAM = TZLY6C6ZMR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Camera usage for barcode detection.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,11 +318,13 @@
 				DEVELOPMENT_TEAM = TZLY6C6ZMR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Camera usage for barcode detection.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
